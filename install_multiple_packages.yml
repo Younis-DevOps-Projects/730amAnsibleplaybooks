@@ -1,0 +1,11 @@
+---
+- name: My Test Playbook   
+  hosts: all
+  become: yes
+  tasks:
+  - name: this is  to install mutiple  package
+    yum:
+      name: ['git' , 'mysql' , 'tree' , 'docker' , 'wget' , 'which']
+      state: installed 
+
+       
